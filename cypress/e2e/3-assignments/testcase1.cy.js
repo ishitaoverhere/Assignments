@@ -25,5 +25,8 @@ it("next test case",()=>{
      cy.get('div.MuiGrid-root.MuiGrid-container div div.slotTimeContainer a').first().click();
 })
 
+it("taking screenshot", () => {
+    cy.screenshot();
+})
 
 })
