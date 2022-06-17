@@ -1,6 +1,6 @@
 /// <reference types="cypress" /> 
 
-describe("my test case",()=>{
+describe("Bajaj test cases",()=>{
 
 
 beforeEach(()=>{
@@ -22,11 +22,7 @@ it('visit bajaj site', () => {
 it("next test case",()=>{
      cy.get("#searchBarInput").type("doctor {enter}");
      cy.get('.css-1kj8wbb a').first().click();
-     cy.get('div.MuiGrid-root.MuiGrid-container div div.slotTimeContainer a').first().click();
-})
-
-it("taking screenshot", () => {
-    cy.screenshot();
-})
+     cy.get(':nth-child(1) > .css-1vjdln7 > :nth-child(5) > .css-uvjnz5 > [data-name="18:30:00"] > [data-testid="appt-slots"]').first().click();
+});
 
 })
